@@ -1,6 +1,6 @@
 {
-  "name": "react-native-xlog-jsi",
-  "version": "0.4.2",
+  "name": "@react-native-ohos/react-native-xlog-jsi",
+  "version": "0.4.3-beta.1",
   "description": "It allows you to easily use https://github.com/Tencent/mars#mars-xlog inside your React Native applications.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -10,8 +10,7 @@
   "files": [
     "src",
     "lib",
-    "android",
-    "ios",
+    "harmony",
     "cpp",
     "react-native-xlog-jsi.podspec",
     "!lib/typescript/example",
@@ -149,5 +148,14 @@
         }
       ]
     ]
+  },
+  "harmony": {
+    "alias": "react-native-xlog-jsi",
+    "autolinking": {
+      "cppPackageClassName": "RNXlogJSIPackage",
+      "cmakeLibraryTargetName": "rnoh_xlog_jsi",
+      "ohPackageName": "@react-native-ohos/react-native-xlog-jsi",
+      "etsPackageClassName": "RNXlogJSIPackage"
+    }
   }
 }
