@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "xlog_jsi",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}
